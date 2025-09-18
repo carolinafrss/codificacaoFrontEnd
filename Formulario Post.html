@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário Post - Aula Codificação Front-End</title>
+    </head>
+    <body>
+        <!--Os Dados do formulário não ficam visíveis na URL na forma de String
+        (exemplo: www)-->
+
+        <form id="meuformulario" onsubmit="processarDados(event)">
+            <h1>Login</h1>    
+            <p>Formulário com o metodo Post</p> 
+            <form action="processa.php" method="get">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+                
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade"><br><br>
+                
+                <input type="submit" value="Enviar">
+    </body>
+</html>
